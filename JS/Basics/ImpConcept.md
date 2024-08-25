@@ -39,3 +39,5 @@ const z = 10;
 
 const obj = { a: 1 };
 obj.a = 2; // Allowed hai, kyunki hum object ki property modify kar rahe hain
+
+
