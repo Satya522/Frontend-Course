@@ -178,12 +178,21 @@ HTML headings are used to define the structure and hierarchy of the content on a
 Here's an example of how headings can be used:
 
 ```html
-<h1>This is a Heading Level 1</h1>
-<h2>This is a Heading Level 2</h2>
-<h3>This is a Heading Level 3</h3>
-<h4>This is a Heading Level 4</h4>
-<h5>This is a Heading Level 5</h5>
-<h6>This is a Heading Level 6</h6>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Headings Example</title>
+</head>
+<body>
+    <h1>This is a Heading Level 1</h1>
+    <h2>This is a Heading Level 2</h2>
+    <h3>This is a Heading Level 3</h3>
+    <h4>This is a Heading Level 4</h4>
+    <h5>This is a Heading Level 5</h5>
+    <h6>This is a Heading Level 6</h6>
+</body>
+</html>
 ```
 
 In this example, each heading element represents a different level of importance. The text inside the heading tags will be displayed with different font sizes and styles, reflecting the hierarchy of the content.
@@ -197,118 +206,224 @@ Remember to choose the appropriate heading level based on the importance and hie
 HTML Links
 Links are defined with the <a> tag. The href attribute specifies the URL of the page the link goes to.
 
-Example of an HTML Link
-
-
-<a href="https://www.example.com">This is a link</a>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example</title>
+</head>
+<body>
+    <a href="https://www.example.com">This is a link</a>
+</body>
+</html>
+```
 
 HTML Images
 Images are defined with the <img> tag. The src attribute specifies the path to the image, and the alt attribute provides alternative text for the image.
 
-Example of an HTML Image
-<img src="image.jpg" alt="Description of image">
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example</title>
+</head>
+<body>
+    <img src="image.jpg" alt="Description of image">
+</body>
+</html>
+```
 
 HTML Lists
 HTML supports ordered lists (<ol>) and unordered lists (<ul>). List items are defined with the <li> tag.
 
 Example of an Ordered List
-<ol>
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-</ol>
-Example of an Unordered List
-<ul>
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-</ul>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example</title>
+</head>
+<body>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+    Example of an Unordered List
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
 
-HTML Tables
+    HTML Tables
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
 Tables are defined with the <table> tag. A table is divided into rows (<tr>), and each row is divided into cells (<td>). Table headers are defined with the <th> tag.
 
 Example of an HTML Table
-<table>
-    <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-    </tr>
-    <tr>
-        <td>Data 1</td>
-        <td>Data 2</td>
-    </tr>
-</table>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
 
 HTML Forms
 Forms are used to collect user input. The <form> element can contain various input elements like text fields, checkboxes, radio buttons, and submit buttons.
 
 Example of an HTML Form
 
-<form action="/submit-form" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
-    <input type="submit" value="Submit">
-</form>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+<body>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+```
+
 HTML Semantic Elements
 Semantic elements clearly describe their meaning in a human- and machine-readable way. Examples include <article>, <section>, <nav>, and <footer>.
 
 Example of HTML Semantic Elements
-<article>
-    <h2>Article Title</h2>
-    <p>This is an article.</p>
-</article>
-<section>
-    <h2>Section Title</h2>
-    <p>This is a section.</p>
-</section>
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
-</nav>
-<footer>
-    <p>Footer content goes here.</p>
-</footer>
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example</title>
+</head>
+<body>
+    <article>
+        <h2>Article Title</h2>
+        <p>This is an article.</p>
+    </article>
+
+    <section>
+        <h2>Section Title</h2>
+        <p>This is a section.</p>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>Footer content goes here.</p>
+    </footer>
+</body>
+</html>
+```
 
 
 HTML Multimedia
 HTML supports multimedia elements like <audio> and <video>.
 
 Example of HTML Multimedia
-<audio controls>
-    <source src="audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
 
-<video width="320" height="240" controls>
-    <source src="movie.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Multimedia Example</title>
+</head>
+<body>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video width="320" height="240" controls>
+        <source src="[def]" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+```
 
 HTML APIs
 HTML5 introduced several APIs that can be used with JavaScript to enhance web pages, such as the Geolocation API, the Canvas API, and the Web Storage API.
 
 Example of Using the Geolocation API
 
-<button onclick="getLocation()">Get Location</button>
-<p id="demo"></p>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Geolocation Example</title>
+</head>
+<body>
+    <button onclick="getLocation()">Get Location</button>
+    <p id="demo"></p>
 
-<script>
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+    <script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+        }
     }
-}
 
-function showPosition(position) {
-    document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
-}
-</script>
-
-
-
+    function showPosition(position) {
+        document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+</body>
+</html>
+```
