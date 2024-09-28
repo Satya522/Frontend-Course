@@ -8,3 +8,5 @@ let num2: number = 7;
 // @ts-ignore
 let result = number = add(num1,num2);
 console.log(result);
+console.log("Hello World");
+// @ts-ignore
