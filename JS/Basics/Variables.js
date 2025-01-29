@@ -11,7 +11,8 @@ var age = 25;
 let city = "Mumbai"; // isse bhi hum kisi bhi type ka data assign kar sakte hain aur baad mein change bhi kar sakte hain
 let isStudent = true;
 
-// const keyword se variable declare karna (ye bhi naya tareeka hai aur block scope follow karta hai, lekin isse hum baad mein change nahi kar sakte)
+// const keyword se variable declare karna (ye bhi naya tareeka hai aur block scope follow karta hai, lekin isse
+// hum baad mein change nahi kar sakte)
 const country = "India"; // isse hum ek baar assign karne ke baad change nahi kar sakte
 
 // Example of variable reassignment
@@ -57,4 +58,13 @@ greet(); // Output: Hello, Amit
 // - The const keyword is used to declare variables that cannot be reassigned.
 // - Variables must follow certain rules while declaring them.
 // - Variables can be declared inside functions as well.
+function hello(){
+  // let name = "Sattu";
+  console.log(name);
+
+  name = "Rahul"; // you can reassign it
+    console.log(name);
+}
+
+hello();
 

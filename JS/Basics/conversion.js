@@ -1,6 +1,10 @@
 // *************************** Conversion ***************************
 /*
-Conversion operations in JavaScript refer to the process of converting a value from one data type to another. This is often necessary when performing operations that require values to be in a specific format. There are several types of conversion operations:
+Conversion operations in JavaScript refer to the process of converting a value from one data type to another.
+
+This is often necessary when performing operations that require values to be in a specific format.
+
+There are several types of conversion operations:
 
 String to Number: Converting a string representation of a number to an actual number.
 Number to String: Converting a number to its string representation.
@@ -52,6 +56,16 @@ let boolVal = true;
 let numVal = Number(boolVal);
 console.log(numVal); // Output: 1
 console.log(typeof numVal); // Output: number
+
+
+let str1 = "123abc";
+let num1 = Number(str1);
+console.log(num1); // Output: NaN
+console.log(typeof num1); // number
+
+
+
+
 
 
 

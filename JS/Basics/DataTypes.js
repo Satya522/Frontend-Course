@@ -1,14 +1,9 @@
 /*
 Data types in JavaScript:
-
-Number: Represents both integer and floating-point numbers.
-String: Represents a sequence of characters.
-Boolean: Represents true or false.
-Undefined: Represents a variable that has been declared but not assigned a value.
-Null: Represents the intentional absence of any object value.
-Object: Represents collections of properties.
-Symbol: Represents a unique and immutable primitive value.
-BigInt: Represents integers with arbitrary precision.
+1.Primitive data types
+==> Number, String, Boolean, Undefined, Null, Symbol, BigInt
+2.Non-primitive data types or reference data types
+==> Object, Array, Function
 
 */
 
@@ -28,12 +23,6 @@ let state;
 // Null
 let temp = null;
 
-// Object
-let person = {
-  firstName: "Satya",
-  lastName: "Kumar"
-};
-
 // Symbol
 let sym = Symbol('unique');
 
@@ -42,8 +31,28 @@ let bigIntNumber = 1234567890123456789012345678901234567890n;
 
 
 // To display the values of these variables, we can use the console.log() method.
-console.table([age, pi, name, isStudent, state, temp, person, sym, bigIntNumber]);
+console.table([age, pi, name, isStudent, state, temp,sym, bigIntNumber]);
 
 // To check the data type of a variable, we can use the typeof operator.
-console.table([typeof age, typeof pi, typeof name, typeof isStudent, typeof state, typeof temp, typeof person, typeof sym, typeof bigIntNumber]);
+console.table([typeof age, typeof pi, typeof name, typeof isStudent, typeof state, typeof temp,typeof sym, typeof bigIntNumber]);
 
+
+// Reference data types
+// Arrays
+let colors = ['red','green','blue','yellow'];
+
+// functions
+function greet() {
+  console.log('Hello');
+}
+greet();
+
+console.table([colors, greet]);
+
+
+// Object
+let person = {
+  firstName: "Satya",
+  lastName: "Kumar"
+};
+console.table([person]);

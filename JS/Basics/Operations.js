@@ -101,22 +101,92 @@ JavaScript supports the following bitwise operations:
 
 // Bitwise AND
 let bitwiseAnd = 5 & 1;
+/*
+5 in binary: 101
+1 in binary: 001
+AND: 001
+
+ basically & operation when we add 1 + 1 = 1, 1 + 0 = 0, 0 + 1 = 0, 0 + 0 = 0
+ so 1+1 = 1, 0+0 = 0, 1+0 = 0 that's why 5 & 1 = 1
+
+    101
+  & 001
+   -----
+    001
+   -----
+
+*/
 console.log(bitwiseAnd); // Output: 1
 
 // Bitwise OR
 let bitwiseOr = 5 | 1;
+/*
+
+5 in binary: 101
+1 in binary: 001
+OR: 101
+
+    basically | operation when we add 1 + 1 = 1, 1 + 0 = 1, 0 + 1 = 1, 0 + 0 = 0
+    so 1+1 = 1, 0+0 = 0, 1+0 = 1 that's why 5 | 1 = 5
+
+   5 | 1 = 5
+    101
+  | 001
+   -----
+    101
+   -----
+* */
 console.log(bitwiseOr); // Output: 5
 
 // Bitwise XOR
 let bitwiseXor = 5 ^ 1;
+/*
+5 in binary: 101
+1 in binary: 001
+XOR: 100
+
+    basically ^ operation when we add 1 + 1 = 0, 1 + 0 = 1, 0 + 1 = 1, 0 + 0 = 0
+    so 1+1 = 0, 0+0 = 0, 1+0 = 1 that's why 5 ^ 1 = 4
+
+    101
+  ^ 001
+   -----
+    100
+   -----
+* */
 console.log(bitwiseXor); // Output: 4
 
 // Bitwise NOT
 let bitwiseNot = ~5;
+/*
+5 in binary: 101
+NOT: -6
+
+    basically ~ operation when we add 1 + 1 = 0, 0 + 0 = 1
+    so 1 = 0, 0 = 1 that's why ~5 = -6
+
+    ~5 = -6
+        101
+    ~
+       -110
+* */
 console.log(bitwiseNot); // Output: -6
 
 // Left Shift
 let leftShift = 5 << 1;
+/**
+5 in binary: 101
+Left Shift by 1: 1010
+
+    basically << operation when we add 1 + 0 = 1, 0 + 1 = 0
+    so 1 = 0, 0 = 1 that's why 5 << 1 = 10
+
+    101
+ << 1
+ -----
+  1010
+ -----
+* */
 console.log(leftShift); // Output: 10
 
 // Right Shift
@@ -181,3 +251,21 @@ console.log(dataType); // Output: "number"
 dataType = typeof "Hello";
 console.log(dataType); // Output: "string"
 
+// === vs ==
+/*
+JavaScript has two comparison operators that are used to compare values: the strict equality operator (===) and the equality operator (==).
+The strict equality operator (===) compares both the value and the data type of the operands. It returns true if both are equal
+The equality operator (==) compares only the value of the operands. It performs type coercion if the operands are of different data types.
+example:
+ // Using == (equality operator)
+let a = 5;
+let b = "5";
+
+console.log(a == b); // Output: true
+// Explanation: The == operator performs type coercion, so it converts the string "5" to the number 5 before comparing.
+
+// Using === (strict equality operator)
+console.log(a === b); // Output: false
+// Explanation: The === operator does not perform type coercion, so it compares both the value and the type. Since a
+ is a number and b is a string, they are not strictly equal.
+ */
