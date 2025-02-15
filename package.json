@@ -1,0 +1,21 @@
+{
+  "name": "web-development-course",
+  "version": "1.0.0",
+  "description": "This Course basically for development. this course included HTML CSS JS ReactJS and many more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satya522/Web-Development-Course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Satya522/Web-Development-Course/issues"
+  },
+  "homepage": "https://github.com/Satya522/Web-Development-Course#readme"
+}
